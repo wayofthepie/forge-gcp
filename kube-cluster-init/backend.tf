@@ -1,9 +1,7 @@
 terraform {
   backend "gcs" {
-    bucket  = ""
-    path    = ""
-    project = ""
+    bucket  = "vulgr-terraform-state"
+    path    = "vulgr/cluster/terraform.tfstate"
+    project = "monthly-hacking"
   }
 }
-
-
