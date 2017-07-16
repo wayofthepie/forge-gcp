@@ -5,7 +5,7 @@ provider "google" {
 
 resource "google_container_cluster" "primary" {
   name = "vulgr-cluster"
-  zone = "${var.region}"
+  zone = "${var.zone}"
   initial_node_count = 3
 
   master_auth {
